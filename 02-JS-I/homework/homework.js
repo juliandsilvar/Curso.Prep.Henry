@@ -26,6 +26,8 @@ const nuevoModulo = 21 % 5 === 1.05;
 // No cambies los nombres de las funciones.
 
 function devolverString(str) {
+  print "indicar:"
+
   Return:nuevaString;
   // "Return" la string provista: str
   // Tu código:
