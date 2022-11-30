@@ -16,10 +16,8 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-//const nuevoModulo = 21 % 5 === 1.05;
-const nuevoModulo = true;
-//este proceso esta mal documentado en algun punto del programa,
-//ya que esta esperando algo no solicitado en el homework
+const nuevoModulo = 21 % 5 === 1; //inexacto
+
 
 // En los próximos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
@@ -81,6 +79,9 @@ function sonIguales(x, y) {
 }
 
 function tienenMismaLongitud(str1, str2) {
+  // Devuelve "true" si las dos strings tienen la misma longitud
+  // De lo contrario, devuelve "false"
+  // Tu código:
   console.log("Ingrese una palabra");
   var str1;
   console.log("Ingrese otra palabra para comparar su longitud");
@@ -90,9 +91,6 @@ function tienenMismaLongitud(str1, str2) {
     return true;
   }
   return false;
-  // Devuelve "true" si las dos strings tienen la misma longitud
-  // De lo contrario, devuelve "false"
-  // Tu código:
 }
 
 function menosQueNoventa(num) {
@@ -156,15 +154,14 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
   console.log("ingrese un numero para elevar al cuadrado");
-  var num;
-  var elevacion=math.pow(num,2);
-  return elevacion;
+  return Math.pow(num, 2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  console.log("ingrese un numero para elevar al cuadrado");
+  return Math.pow(num, 3);
 }
 
 function elevar(num, exponent) {
