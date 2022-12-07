@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1; //inexacto
+const nuevoModulo = 21 % 5 === 1; //inexacto por 0.05
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -154,38 +154,46 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
   console.log("ingrese un numero para elevar al cuadrado");
+  var num;
   return Math.pow(num, 2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  console.log("ingrese un numero para elevar al cuadrado");
+  console.log("ingrese un numero para elevar al cubo");
+  var num;
   return Math.pow(num, 3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  console.log("ingrese la base y el exponente en numeros para elevacion");
+  var num, exponent;
+  return Math.pow(num, exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  console.log("ingrese el numero decimal para redondearlo y retornar el entero mas cercano");
+  var num;
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  console.log("ingrese el numero decimal para redondearlo y retornar el entero mas cercano a la alta");
+  var num;
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  return Math.random()
 }
 
 function esPositivo(numero) {
@@ -193,47 +201,77 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  console.log("ingrese numero para verificar si es positivo o negativo");
+  var numero;
+  if(numero==0){
+    return false;
+  }
+  else if(numero>0){
+    return "Es positivo";
+  }
+  else return "Es negativo";
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  console.log("Ingrese el texto deseado");
+  var str;
+  return str + "!";
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  console.log("Ingrese nombre");
+  var nombre;
+  console.log("Ingrese apellido");
+  var apellido;
+  return nombre+" "+apellido;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+  console.log("Ingrese nombre");
+  var nombre;
+  var saludo="Hola "+nombre+"!";
+  return saludo;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  console.log("Ingrese por favor el alto del rectangulo");
+  var alto;
+  console.log("Ingrese por favor el ancho del rectangulo");
+  var ancho;
+  var area=alto*ancho;
+  return area;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  console.log("Ingrese el tamaño de uno de sus lados");
+  var lado;
+  return lado*4;
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  console.log("Ingrese por favor la base del triangulo");
+  var base;
+  console.log("Ingrese por favor la altura del triangulo");
+  var altura;
+  var area=(base*altura)/2;
+  return area;
 }
 
 
@@ -241,7 +279,9 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  console.log("ingrese la cantidad de euros a convertir");
+  var euro;
+  return euro*1.20;
 }
 
 
@@ -251,7 +291,19 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  console.log("Ingrese una letra para determinar si es vocal");
+  var letra;
+  if(letra==="a"){
+    return "Es vocal";
+  }if(letra==="e"){
+    return "Es vocal";
+  }if(letra==="i"){
+    return "Es vocal";
+  }if(letra==="o"){
+    return "Es vocal";
+  }if(letra==="u"){
+    return "Es vocal";
+  }else return "Dato incorrecto";
 }
 
 
