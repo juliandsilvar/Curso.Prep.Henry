@@ -5,11 +5,15 @@
 1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
 
 	* Variables
+		Una variable reserva parte de la memoria del sistema, para poder utilizarla guardando datos que seran utilizados luego en funciones y procesos del programa
 	* Strings
+		Son variables de tipo texto o cadenas de texto
 	* Funciones (argumentos, `return`)
+		Las funciones son partes del codigo que realizan procesos y devuelven resultados dependiendo del proceso realizado en la funcion, usando los argumentos y variables ingresadas o indicadas previamente.
 	* Declaraciones `if`
+		Estas retornan un resultado dependiendo de si un enunciado es verdadero o falso.
 	* Valores booleanos (`true`, `false`)
-
+	Los valores booleanos son funciones o procesos que solo pueden devolver verdadero o falso, es decir, solo tienen 2 opciones de respuesta.
 
 2. Instalar Node y NPM. NPM se incluye con Node. https://nodejs.org/en/download/
 
